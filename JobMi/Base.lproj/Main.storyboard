@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FjallaOne-Regular.ttf">
+            <string>FjallaOne-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="JobMi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOBMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-1c-vvp">
+                                <rect key="frame" x="133" y="54" width="124" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xbg-Q3-1Mg">
+                                <rect key="frame" x="20" y="287.66666666666663" width="350" height="268.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCF-IY-F8f">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="29.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJW-S3-rXR">
+                                        <rect key="frame" x="0.0" y="44.333333333333314" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="AKe-lo-kqn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAO-u6-4Xr">
+                                        <rect key="frame" x="0.0" y="109.33333333333331" width="350" height="29.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7i0-Xw-P9R">
+                                        <rect key="frame" x="0.0" y="153.66666666666663" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Zsv-p5-92C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DJ-2C-ogl">
+                                        <rect key="frame" x="0.0" y="218.66666666666663" width="350" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019607843137" green="0.0" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TiZ-js-Xhb"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SIGN IN"/>
+                                        <connections>
+                                            <action selector="signInActon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HvS-Hb-XHc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpD-4r-KpS">
+                                <rect key="frame" x="68.666666666666686" y="739" width="253" height="31"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="don’t have an account yet? sign up!"/>
+                                <connections>
+                                    <action selector="dontAccountAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qp-hM-EgP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xbg-Q3-1Mg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MMl-K7-KF1"/>
+                            <constraint firstItem="OpD-4r-KpS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pyp-tU-pWE"/>
+                            <constraint firstItem="RgW-1c-vvp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Y73-Bc-Qgv"/>
+                            <constraint firstItem="xbg-Q3-1Mg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbb-Em-T3X"/>
+                            <constraint firstItem="RgW-1c-vvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBk-0o-DHd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OpD-4r-KpS" secondAttribute="bottom" constant="40" id="k1N-ki-YNb"/>
+                            <constraint firstItem="xbg-Q3-1Mg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o7j-J1-0L2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextFeild" destination="xJW-S3-rXR" id="Ewg-UY-hjQ"/>
+                        <outlet property="passwordTextFeild" destination="7i0-Xw-P9R" id="Nu7-cN-gDe"/>
+                        <outlet property="signInBtn" destination="2DJ-2C-ogl" id="uie-1Z-vuM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597.10144927536237" y="63.616071428571423"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="FpE-LB-WoG">
+            <objects>
+                <viewController restorationIdentifier="SignupViewController" storyboardIdentifier="SignupViewController" modalPresentationStyle="fullScreen" id="S9s-x5-J61" customClass="SignUpViewController" customModule="JobMi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOy-b3-Lo6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOBMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlT-be-LK1">
+                                <rect key="frame" x="133" y="54" width="124" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5d7-9e-ROH">
+                                <rect key="frame" x="20" y="233" width="350" height="378"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL8-Sq-cLe">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="29.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cK-JL-Zsv">
+                                        <rect key="frame" x="0.0" y="44.333333333333314" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RjJ-IS-nsq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-h3-2Ul">
+                                        <rect key="frame" x="0.0" y="109.33333333333331" width="350" height="29.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rg5-n9-zhI">
+                                        <rect key="frame" x="0.0" y="153.66666666666669" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TDU-LP-8iR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoA-K2-cE2">
+                                        <rect key="frame" x="0.0" y="218.66666666666669" width="350" height="29.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqH-C7-f46">
+                                        <rect key="frame" x="0.0" y="263" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ryG-Mg-8Ul"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsK-38-mRy">
+                                        <rect key="frame" x="0.0" y="328" width="350" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.0" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iFk-gV-Jbz"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SIGN UP"/>
+                                        <connections>
+                                            <action selector="signUpAction:" destination="S9s-x5-J61" eventType="touchUpInside" id="prH-fw-iko"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aj-J1-0oS">
+                                <rect key="frame" x="99.333333333333329" y="749" width="191.66666666666669" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="I allready have an account"/>
+                                <connections>
+                                    <action selector="backToSignIn:" destination="S9s-x5-J61" eventType="touchUpInside" id="q9g-lf-jh5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yYi-I7-NPG"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5d7-9e-ROH" firstAttribute="leading" secondItem="yYi-I7-NPG" secondAttribute="leading" constant="20" id="7qO-YC-XaX"/>
+                            <constraint firstItem="YlT-be-LK1" firstAttribute="centerX" secondItem="mOy-b3-Lo6" secondAttribute="centerX" id="OdM-7h-cnX"/>
+                            <constraint firstItem="YlT-be-LK1" firstAttribute="top" secondItem="yYi-I7-NPG" secondAttribute="top" constant="10" id="RAF-ww-PxA"/>
+                            <constraint firstItem="5d7-9e-ROH" firstAttribute="centerY" secondItem="mOy-b3-Lo6" secondAttribute="centerY" id="RdP-UF-A3e"/>
+                            <constraint firstItem="9aj-J1-0oS" firstAttribute="centerX" secondItem="mOy-b3-Lo6" secondAttribute="centerX" id="dRi-xO-1wi"/>
+                            <constraint firstItem="5d7-9e-ROH" firstAttribute="centerX" secondItem="mOy-b3-Lo6" secondAttribute="centerX" id="w07-rn-IrF"/>
+                            <constraint firstItem="9aj-J1-0oS" firstAttribute="bottom" secondItem="yYi-I7-NPG" secondAttribute="bottom" constant="-30" id="xS7-HH-jIZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextFeild" destination="Rg5-n9-zhI" id="amw-vt-5Yz"/>
+                        <outlet property="fullNameTextFeild" destination="2cK-JL-Zsv" id="Wgu-Dw-Q0q"/>
+                        <outlet property="passwordTextFeild" destination="uqH-C7-f46" id="We5-Vo-2hV"/>
+                        <outlet property="signInBtn" destination="GsK-38-mRy" id="cRq-6I-fRp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeR-zL-Yqe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386.1538461538462" y="63.270142180094787"/>
+        </scene>
+        <!--Job Details View Controller-->
+        <scene sceneID="s2U-AN-AKr">
+            <objects>
+                <viewController storyboardIdentifier="JobDetailsViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6J9-Xv-gR9" customClass="JobDetailsViewController" customModule="JobMi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2G8-bq-8MO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5V4-J0-0BN">
+                                <rect key="frame" x="20" y="124" width="350" height="596"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-Jh-1ml">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="29.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cxy-2n-dkf">
+                                        <rect key="frame" x="0.0" y="44.333333333333343" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="V2J-JH-44K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price (in USD for hour)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqY-Ym-Q4f">
+                                        <rect key="frame" x="0.0" y="109.33333333333334" width="350" height="29.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9TT-Qz-GcQ">
+                                        <rect key="frame" x="0.0" y="153.66666666666669" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Suy-A2-Qo4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about you and your work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVp-4z-DvL">
+                                        <rect key="frame" x="0.0" y="218.66666666666669" width="350" height="29.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cd8-Ue-zJ2">
+                                        <rect key="frame" x="0.0" y="263" width="350" height="333"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcN-S4-eVl">
+                                <rect key="frame" x="72.000000000000014" y="54" width="246.33333333333337" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sHj-J8-M4u">
+                                <rect key="frame" x="10" y="750" width="370" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWR-7a-OAW">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Suk-It-V4V"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CANCEL"/>
+                                        <connections>
+                                            <action selector="openToWorkAction:" destination="6J9-Xv-gR9" eventType="touchUpInside" id="qdK-uF-VHq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crH-d7-meB">
+                                        <rect key="frame" x="193" y="0.0" width="177" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.0" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Xgc-6A-Dri"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SUBMIT"/>
+                                        <connections>
+                                            <action selector="signInBtnAction:" destination="6J9-Xv-gR9" eventType="touchUpInside" id="U5T-iW-h8J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h1N-8W-BKt"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5V4-J0-0BN" firstAttribute="centerX" secondItem="2G8-bq-8MO" secondAttribute="centerX" id="IfM-oA-Ynu"/>
+                            <constraint firstItem="5V4-J0-0BN" firstAttribute="leading" secondItem="h1N-8W-BKt" secondAttribute="leading" constant="20" id="Kz8-oF-shT"/>
+                            <constraint firstItem="sHj-J8-M4u" firstAttribute="bottom" secondItem="5V4-J0-0BN" secondAttribute="bottom" constant="80" id="MXu-Tc-bjO"/>
+                            <constraint firstItem="tcN-S4-eVl" firstAttribute="top" secondItem="h1N-8W-BKt" secondAttribute="top" constant="10" id="Ntp-1M-w2O"/>
+                            <constraint firstItem="5V4-J0-0BN" firstAttribute="centerY" secondItem="2G8-bq-8MO" secondAttribute="centerY" id="PRi-CB-eJ5"/>
+                            <constraint firstItem="sHj-J8-M4u" firstAttribute="bottom" secondItem="h1N-8W-BKt" secondAttribute="bottom" constant="-10" id="RlD-CB-x6K"/>
+                            <constraint firstItem="tcN-S4-eVl" firstAttribute="centerX" secondItem="2G8-bq-8MO" secondAttribute="centerX" id="aQs-Uq-AMg"/>
+                            <constraint firstItem="sHj-J8-M4u" firstAttribute="trailing" secondItem="h1N-8W-BKt" secondAttribute="trailing" constant="-10" id="ewu-Gf-zWj"/>
+                            <constraint firstItem="sHj-J8-M4u" firstAttribute="leading" secondItem="h1N-8W-BKt" secondAttribute="leading" constant="10" id="vTu-7l-pUB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutYouTextFeild" destination="Cd8-Ue-zJ2" id="8sM-Mg-iJk"/>
+                        <outlet property="priceTextFeild" destination="9TT-Qz-GcQ" id="UMr-5X-29L"/>
+                        <outlet property="signInBtn" destination="crH-d7-meB" id="t1y-1b-slY"/>
+                        <outlet property="titleTextFeild" destination="Cxy-2n-dkf" id="dQf-vd-fpx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBM-qP-ygD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="808"/>
+        </scene>
+        <!--Open For Work View Controller-->
+        <scene sceneID="fTx-78-tt0">
+            <objects>
+                <viewController storyboardIdentifier="OpenForWorkViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rp2-X5-SKn" customClass="OpenForWorkViewController" customModule="JobMi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TOK-Pg-t7R">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zv1-ZN-CeS">
+                                <rect key="frame" x="10" y="54" width="370" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOBS POSTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDV-80-Miz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7s-DA-F2v">
+                                        <rect key="frame" x="320" y="0.0" width="50" height="50"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="83T-Qc-EgJ"/>
+                                            <constraint firstAttribute="height" constant="50" id="yAb-uL-M6a"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="person.crop.circle.fill.badge.minus" catalog="system"/>
+                                        <connections>
+                                            <action selector="logOut:" destination="rp2-X5-SKn" eventType="touchUpInside" id="3nS-Xm-zNQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LKi-oH-egB"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tlr-8V-bWZ">
+                                <rect key="frame" x="0.0" y="124" width="390" height="606"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="125" id="1x2-D8-sVI" customClass="OpenToWorkTableViewCell" customModule="JobMi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1x2-D8-sVI" id="BqA-tw-7HP">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prs-dq-o8Q">
+                                                    <rect key="frame" x="10" y="10" width="370" height="105"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="web designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1V-Yo-bpY">
+                                                            <rect key="frame" x="10" y="9.9999999999999982" width="350" height="29.333333333333329"/>
+                                                            <color key="tintColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hNo-PQ-FjA">
+                                                            <rect key="frame" x="10" y="53.000000000000007" width="350" height="29.333333333333336"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idan Shwartz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BV-0l-ctI">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="229.66666666666666" height="29.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40$/Hr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGg-Ec-BiQ">
+                                                                    <rect key="frame" x="229.66666666666666" y="0.0" width="120.33333333333334" height="29.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.12549019610000001" green="0.0" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="n1V-Yo-bpY" secondAttribute="trailing" constant="10" id="5ho-dt-h8G"/>
+                                                        <constraint firstItem="hNo-PQ-FjA" firstAttribute="leading" secondItem="prs-dq-o8Q" secondAttribute="leading" constant="10" id="G0J-79-0bJ"/>
+                                                        <constraint firstItem="n1V-Yo-bpY" firstAttribute="leading" secondItem="prs-dq-o8Q" secondAttribute="leading" constant="10" id="QDo-xr-rRm"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hNo-PQ-FjA" secondAttribute="trailing" constant="10" id="izF-4H-n1T"/>
+                                                        <constraint firstItem="n1V-Yo-bpY" firstAttribute="top" secondItem="prs-dq-o8Q" secondAttribute="top" constant="10" id="lUo-hV-PHY"/>
+                                                        <constraint firstItem="hNo-PQ-FjA" firstAttribute="top" secondItem="n1V-Yo-bpY" secondAttribute="bottom" constant="13.5" id="pft-rd-Y92"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="prs-dq-o8Q" firstAttribute="leading" secondItem="BqA-tw-7HP" secondAttribute="leading" constant="10" id="CWc-mn-4u1"/>
+                                                <constraint firstAttribute="bottom" secondItem="prs-dq-o8Q" secondAttribute="bottom" constant="10" id="Dhh-Fm-EDP"/>
+                                                <constraint firstAttribute="trailing" secondItem="prs-dq-o8Q" secondAttribute="trailing" constant="10" id="ajo-FG-LJI"/>
+                                                <constraint firstItem="prs-dq-o8Q" firstAttribute="top" secondItem="BqA-tw-7HP" secondAttribute="top" constant="10" id="pcJ-OO-VuP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="containerView" destination="prs-dq-o8Q" id="wMg-by-2w0"/>
+                                            <outlet property="hourlyRateLabel" destination="GGg-Ec-BiQ" id="qeG-d6-aAJ"/>
+                                            <outlet property="nameLabel" destination="3BV-0l-ctI" id="Pf6-DE-unk"/>
+                                            <outlet property="titleLabel" destination="n1V-Yo-bpY" id="GKB-Fs-tPG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-1S-lYE">
+                                <rect key="frame" x="10" y="750" width="370" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xn8-d2-vms">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="s8s-eD-DkQ"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="INVITES"/>
+                                        <connections>
+                                            <action selector="navigateToMyOffers:" destination="rp2-X5-SKn" eventType="touchUpInside" id="UbJ-FA-dbc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4T-nr-udG">
+                                        <rect key="frame" x="185" y="0.0" width="185" height="50"/>
+                                        <color key="backgroundColor" red="0.1740779281" green="0.25758385659999999" blue="0.88087826970000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="to6-5K-Glc"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="POST JOB"/>
+                                        <connections>
+                                            <action selector="navigateToAddJob:" destination="rp2-X5-SKn" eventType="touchUpInside" id="sdw-ru-1li"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hjn-1x-cAT"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r8B-1S-lYE" firstAttribute="leading" secondItem="hjn-1x-cAT" secondAttribute="leading" constant="10" id="20b-cq-2Si"/>
+                            <constraint firstItem="zv1-ZN-CeS" firstAttribute="centerX" secondItem="TOK-Pg-t7R" secondAttribute="centerX" id="3PN-wJ-yAa"/>
+                            <constraint firstItem="r8B-1S-lYE" firstAttribute="bottom" secondItem="Tlr-8V-bWZ" secondAttribute="bottom" constant="70" id="4z8-ri-YXY"/>
+                            <constraint firstItem="r8B-1S-lYE" firstAttribute="trailing" secondItem="hjn-1x-cAT" secondAttribute="trailing" constant="-10" id="5JS-R8-w95"/>
+                            <constraint firstItem="r8B-1S-lYE" firstAttribute="bottom" secondItem="hjn-1x-cAT" secondAttribute="bottom" constant="-10" id="EBt-rj-Qxr"/>
+                            <constraint firstItem="zv1-ZN-CeS" firstAttribute="top" secondItem="hjn-1x-cAT" secondAttribute="top" constant="10" id="MDi-7y-c6w"/>
+                            <constraint firstItem="Tlr-8V-bWZ" firstAttribute="leading" secondItem="hjn-1x-cAT" secondAttribute="leading" id="P6R-b3-Jy2"/>
+                            <constraint firstItem="zv1-ZN-CeS" firstAttribute="leading" secondItem="hjn-1x-cAT" secondAttribute="leading" constant="10" id="TmY-pC-AeY"/>
+                            <constraint firstItem="hjn-1x-cAT" firstAttribute="trailing" secondItem="Tlr-8V-bWZ" secondAttribute="trailing" id="Ysc-NA-z58"/>
+                            <constraint firstItem="Tlr-8V-bWZ" firstAttribute="top" secondItem="zv1-ZN-CeS" secondAttribute="top" constant="70" id="aPl-KR-2h6"/>
+                            <constraint firstItem="zv1-ZN-CeS" firstAttribute="trailing" secondItem="hjn-1x-cAT" secondAttribute="trailing" constant="-10" id="sct-0h-9C0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="openToWorkTV" destination="Tlr-8V-bWZ" id="M6h-nc-4SF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7O-mp-OWU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="64"/>
+        </scene>
+        <!--My Requests View Controller-->
+        <scene sceneID="Xtd-Q2-721">
+            <objects>
+                <viewController storyboardIdentifier="MyREquestsViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TzC-Gd-LHN" customClass="MyRequestsViewController" customModule="JobMi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YwR-uo-M0V">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Requests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u1-0K-Nuf">
+                                <rect key="frame" x="77.666666666666686" y="64" width="235" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WQs-Er-Iz0">
+                                <rect key="frame" x="0.0" y="140.66666666666669" width="390" height="589.33333333333326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="125" id="8VV-Nh-N4T" customClass="RequestTableViewCell" customModule="JobMi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8VV-Nh-N4T" id="GjI-Wb-2k3">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR8-Zz-ASo">
+                                                    <rect key="frame" x="10" y="10" width="370" height="105"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="DfI-6l-usu">
+                                                            <rect key="frame" x="10" y="10" width="350" height="30"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="web designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vu1-J8-Fl7">
+                                                                    <rect key="frame" x="0.0" y="0.33333333333333215" width="150.66666666666666" height="29.333333333333332"/>
+                                                                    <color key="tintColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6Y-gg-2eC">
+                                                                    <rect key="frame" x="151.66666666666666" y="0.0" width="62.333333333333343" height="30"/>
+                                                                </stackView>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMP-8o-Kf4">
+                                                                    <rect key="frame" x="215.00000000000003" y="0.0" width="89.333333333333343" height="30"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" image="trash"/>
+                                                                    <connections>
+                                                                        <action selector="deleteInvite:" destination="8VV-Nh-N4T" eventType="touchUpInside" id="EtD-fs-XOY"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDT-QU-BkS">
+                                                                    <rect key="frame" x="305.33333333333331" y="0.0" width="44.666666666666686" height="30"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" image="edit"/>
+                                                                    <connections>
+                                                                        <action selector="email:" destination="8VV-Nh-N4T" eventType="touchUpInside" id="HpQ-eB-O5i"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="3fR-j8-1Ju"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qQa-CA-10B">
+                                                            <rect key="frame" x="10" y="60.000000000000007" width="350" height="29.333333333333336"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idan Shwartz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGw-7y-bLn">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="29.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="25"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.12549019610000001" green="0.0" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="DfI-6l-usu" secondAttribute="trailing" constant="10" id="0eH-eU-bco"/>
+                                                        <constraint firstItem="qQa-CA-10B" firstAttribute="top" secondItem="DfI-6l-usu" secondAttribute="bottom" constant="20" id="5Mb-uL-EPJ"/>
+                                                        <constraint firstItem="qQa-CA-10B" firstAttribute="leading" secondItem="FR8-Zz-ASo" secondAttribute="leading" constant="10" id="GgI-bd-GId"/>
+                                                        <constraint firstItem="DfI-6l-usu" firstAttribute="top" secondItem="FR8-Zz-ASo" secondAttribute="top" constant="10" id="H4Y-32-v8e"/>
+                                                        <constraint firstItem="DfI-6l-usu" firstAttribute="leading" secondItem="FR8-Zz-ASo" secondAttribute="leading" constant="10" id="dwc-hb-4Dn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qQa-CA-10B" secondAttribute="trailing" constant="10" id="kgN-Be-GVp"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="FR8-Zz-ASo" firstAttribute="leading" secondItem="GjI-Wb-2k3" secondAttribute="leading" constant="10" id="EBn-kK-Yrj"/>
+                                                <constraint firstAttribute="trailing" secondItem="FR8-Zz-ASo" secondAttribute="trailing" constant="10" id="RWi-CE-Nle"/>
+                                                <constraint firstAttribute="bottom" secondItem="FR8-Zz-ASo" secondAttribute="bottom" constant="10" id="nxu-UI-DSg"/>
+                                                <constraint firstItem="FR8-Zz-ASo" firstAttribute="top" secondItem="GjI-Wb-2k3" secondAttribute="top" constant="10" id="tP3-3w-kOO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="containerView" destination="FR8-Zz-ASo" id="NES-RN-Y0m"/>
+                                            <outlet property="nameLabel" destination="hGw-7y-bLn" id="3Mc-z5-Fg8"/>
+                                            <outlet property="titleLabel" destination="vu1-J8-Fl7" id="kyb-fP-BWn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8B-Ez-2fY">
+                                <rect key="frame" x="10" y="750" width="370" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bvx-Bm-rhg"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="back"/>
+                                <connections>
+                                    <action selector="navigateBackToAllJobs:" destination="TzC-Gd-LHN" eventType="touchUpInside" id="l5z-FO-RrD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M58-ND-OjC"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F8B-Ez-2fY" firstAttribute="bottom" secondItem="M58-ND-OjC" secondAttribute="bottom" constant="-10" id="0U3-hN-KMF"/>
+                            <constraint firstItem="WQs-Er-Iz0" firstAttribute="leading" secondItem="M58-ND-OjC" secondAttribute="leading" id="2vp-IM-jnN"/>
+                            <constraint firstItem="F8B-Ez-2fY" firstAttribute="trailing" secondItem="M58-ND-OjC" secondAttribute="trailing" constant="-10" id="Af1-6J-kfD"/>
+                            <constraint firstItem="M58-ND-OjC" firstAttribute="trailing" secondItem="WQs-Er-Iz0" secondAttribute="trailing" id="BFk-Ks-xLy"/>
+                            <constraint firstItem="WQs-Er-Iz0" firstAttribute="top" secondItem="0u1-0K-Nuf" secondAttribute="bottom" constant="30" id="St0-Fd-wJq"/>
+                            <constraint firstItem="0u1-0K-Nuf" firstAttribute="top" secondItem="M58-ND-OjC" secondAttribute="top" constant="20" id="bWH-ZP-PPL"/>
+                            <constraint firstItem="F8B-Ez-2fY" firstAttribute="leading" secondItem="M58-ND-OjC" secondAttribute="leading" constant="10" id="cD9-t9-l52"/>
+                            <constraint firstItem="F8B-Ez-2fY" firstAttribute="bottom" secondItem="WQs-Er-Iz0" secondAttribute="bottom" constant="70" id="kgz-LJ-gUB"/>
+                            <constraint firstItem="0u1-0K-Nuf" firstAttribute="centerX" secondItem="YwR-uo-M0V" secondAttribute="centerX" id="tm4-Po-FPc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="requestTV" destination="WQs-Er-Iz0" id="167-Qv-7xI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMz-1v-Hsh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3707.6923076923076" y="63.981042654028435"/>
+        </scene>
+        <!--Request Details View Controller-->
+        <scene sceneID="Gfe-l3-j6R">
+            <objects>
+                <viewController storyboardIdentifier="RequestDetailsViewController" modalPresentationStyle="fullScreen" id="75u-Sk-6wy" customClass="RequestDetailsViewController" customModule="JobMi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tjG-5o-TbU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="QWm-mS-Hul">
+                                <rect key="frame" x="20" y="74" width="350" height="646"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVH-oN-hAw">
+                                        <rect key="frame" x="0.0" y="0.0" width="218.66666666666666" height="41"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xA7-tu-eMw">
+                                        <rect key="frame" x="0.0" y="72" width="350" height="502"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <string key="text">I am a fullstack freelancer web 
+developer, with more then 2 years 
+experience in delivering hegh - 
+performance, small size, mobile - 
+frindly web application for great 
+price, feel free to contact me.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40$ Per Hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-7K-Bam">
+                                        <rect key="frame" x="0.0" y="605" width="350" height="41"/>
+                                        <fontDescription key="fontDescription" name="FjallaOne-Regular" family="Fjalla One" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xA7-tu-eMw" firstAttribute="leading" secondItem="QWm-mS-Hul" secondAttribute="leading" id="eJ8-Ev-Hld"/>
+                                    <constraint firstAttribute="trailing" secondItem="xA7-tu-eMw" secondAttribute="trailing" id="nHb-ac-UMx"/>
+                                    <constraint firstItem="Cqd-7K-Bam" firstAttribute="centerX" secondItem="QWm-mS-Hul" secondAttribute="centerX" id="ogE-9a-3m5"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="irO-OF-1N1">
+                                <rect key="frame" x="10" y="750" width="370" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WQ-PB-dix">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="K3b-ij-54k"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="BACK"/>
+                                        <connections>
+                                            <action selector="returnToJobsList:" destination="75u-Sk-6wy" eventType="touchUpInside" id="BMt-Qv-k3s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aat-Z0-hhl">
+                                        <rect key="frame" x="189" y="0.0" width="181" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.0" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lgF-Wk-Vzt"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SEND INVITE"/>
+                                        <connections>
+                                            <action selector="submitAction:" destination="75u-Sk-6wy" eventType="touchUpInside" id="8w4-AL-Nga"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yj0-vJ-uDn"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="irO-OF-1N1" firstAttribute="centerX" secondItem="tjG-5o-TbU" secondAttribute="centerX" id="1sW-4J-ev5"/>
+                            <constraint firstItem="irO-OF-1N1" firstAttribute="bottom" secondItem="QWm-mS-Hul" secondAttribute="bottom" constant="80" id="Cz7-rA-gFg"/>
+                            <constraint firstItem="irO-OF-1N1" firstAttribute="leading" secondItem="Yj0-vJ-uDn" secondAttribute="leading" constant="10" id="Dfn-9F-Qxn"/>
+                            <constraint firstItem="QWm-mS-Hul" firstAttribute="top" secondItem="Yj0-vJ-uDn" secondAttribute="top" constant="30" id="buY-R3-Asj"/>
+                            <constraint firstItem="QWm-mS-Hul" firstAttribute="centerX" secondItem="tjG-5o-TbU" secondAttribute="centerX" id="kIt-qQ-GU5"/>
+                            <constraint firstItem="irO-OF-1N1" firstAttribute="trailing" secondItem="Yj0-vJ-uDn" secondAttribute="trailing" constant="-10" id="qgk-7G-8gl"/>
+                            <constraint firstItem="irO-OF-1N1" firstAttribute="bottom" secondItem="Yj0-vJ-uDn" secondAttribute="bottom" constant="-10" id="wDN-Ou-ivB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="designationLabel" destination="JVH-oN-hAw" id="dkp-AP-Aqs"/>
+                        <outlet property="jobDetails" destination="xA7-tu-eMw" id="65E-KZ-GLN"/>
+                        <outlet property="rateLabel" destination="Cqd-7K-Bam" id="bSH-z8-WNh"/>
+                        <outlet property="signInBtn" destination="Aat-Z0-hhl" id="RqB-BF-gSW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UM-CY-efj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3001" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="edit" width="20.666666030883789" height="24.333333969116211"/>
+        <image name="person.crop.circle.fill.badge.minus" catalog="system" width="128" height="113"/>
+        <image name="trash" width="28" height="28"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
